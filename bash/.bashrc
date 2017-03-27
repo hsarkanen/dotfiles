@@ -42,3 +42,4 @@ alias l='ls -CF'
 alias de='~/Dropbox/nvidia/nvidia-desktop.sh'
 alias pr='~/Dropbox/nvidia/nvidia-projector.sh'
 
+set -o vi
