@@ -1,0 +1,36 @@
+[user]
+	name = Heikki Sarkanen
+	email = heikki.sarkanen@tamtron.fi
+[color]
+	ui = auto
+[core]
+	editor = vim
+[alias]
+	s = status
+	b = branch
+	c = checkout
+	co = commit
+	sh = show
+        l = "log --oneline --graph --color --all --decorate"
+	f = fetch -a
+	lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+	lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+	lg = !"git lg1"
+        lo = log --format=oneline
+        di = diff --no-ext-diff
+[diff]
+	external = ~/.git-meld.sh
+
+[credential "https://github.com"]
+        username = hsarkanen
+[http]
+	postBuffer = 524288000
+[sendemail]
+	smtpserver = smtp.office365.com
+	smtpserverport = 587
+	smtpencryption = tls
+	smtpuser = heikki.sarkanen@tamtron.fi
+[push]
+	default = matching
+[credential]
+	helper = cache --timeout=7200
