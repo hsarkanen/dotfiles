@@ -45,3 +45,6 @@ alias pr='~/Dropbox/nvidia/nvidia-projector.sh'
 set -o vi
 # Copy last argument functionality from emacs mode
 bind -m vi-command ".":insert-last-argument
+
+# Enable caseinsensitive tab completion
+bind 'set completion-ignore-case on'
