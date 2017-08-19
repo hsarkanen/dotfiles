@@ -39,8 +39,8 @@ alias egrep='egrep --color=auto'
 alias ll='ls -alFh'
 alias la='ls -A'
 alias l='ls -CF'
-alias de='nvidia-settings --assign "CurrentMetaMode=DPY-3: nvidia-auto-select @1920x1080 +0+0 {ViewPortIn=1920x1080, ViewPortOut=1920x1080+0+0}, DPY-2: nvidia-auto-select @2560x1440 +1920+0 {ViewPortIn=2560x1440, ViewPortOut=2560x1440+0+0}" \
-  && xrandr --output DVI-D-1 --primary'
+alias de='nvidia-settings --assign "CurrentMetaMode=DPY-0: nvidia-auto-select @1920x1080 +0+0 {ViewPortIn=1920x1080, ViewPortOut=1920x1080+0+0}, DPY-5: nvidia-auto-select @2560x1440 +1920+0 {ViewPortIn=2560x1440, ViewPortOut=2560x1440+0+0}" \
+  && xrandr --output DVI-D-0 --primary'
 alias pr='nvidia-settings --assign "CurrentMetaMode=DPY-1: nvidia-auto-select @1920x1080 +0+0 {ViewPortIn=1920x1080, ViewPortOut=1920x1080+0+0}"'
 # Refesh LVDS display after inverted colors because of suspend
 alias lvds='xrandr --output LVDS --off; xrandr --output LVDS --auto;'
